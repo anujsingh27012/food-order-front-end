@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner&family=Playfair+Display:ital@1&family=Square+Peg&family=Ubuntu&display=swap');
+
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Navigation bar styling */
+
+#logo {
+    margin: 15px 10px;
+}
+
+#logo img {
+    height: 70px;
+    width: 70px;
+}
+
+#navbar {
+    display: flex;
+    height: 13px;
+    align-items: center;
+    position: sticky;
+    top: 31px;
+}
+
+#navbar::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(75, 25, 25);
+    height: 71px;
+    width: 100%;
+    top: -31px;
+    left: 0%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    font-size: 1.3rem;
+    list-style: none;
+}
+
+#navbar ul li a {
+    color: white;
+    list-style: none;
+    display: block;
+    text-decoration: none;
+    padding: 28px 22px;
+}
+
+#navbar ul li a:hover {
+    color: blue;
+    font-size: larger;
+    border-radius: 4px;
+    height: 20px;
+}
+
+/* Section styling */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url("https://cdn.pixabay.com/photo/2016/03/30/21/59/coffee-beans-1291656_960_720.jpg") no-repeat center center/cover;
+    /* background: url('https://pixabay.com/videos/pot-cooking-steam-steaming-hot-267/.mp4'); */
+    height: 480px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+.h-primary{
+    font-size: 2.9rem;
+    padding: 10px;
+}
+.h-primary-center{
+    text-align: center;
+    font-size: 2.8rem;
+}
+#home h1{
+    color: aliceblue;
+    text-align: center;
+    margin-top: 212px;
+}
+#home p{
+    color: aliceblue;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Edu QLD Beginner', cursive;
+}
+#btn{
+    background-color: rgb(95, 57, 57);
+    padding: 3px 20px ;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    color: cornsilk;
+}
+
+/* services section */
+#service-container{
+    margin-top: 105px;
+}
+.h-secondary{
+    text-align: center;
+}
+#services
+{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid black;
+    padding: 10px 5px 5px 14px;
+    margin: 3px;
+    border-radius: 20px;
+    background-color: #e1d7d7
+}
+#services .box img{
+    height: 156px;
+    margin: auto;
+    display: block;
+    border-radius: 61px;
+}
+
+/* Client-section */
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#client-section {
+    position: relative;
+}
+#client-section img{
+    height: 111px;
+    padding: 10px;
+}
+.client-items{
+    padding: 10px;
+}
+#client-section::before{
+    position: absolute;
+    content: "";
+    background: url('https://cdn.pixabay.com/photo/2015/10/14/12/27/cravat-987584_960_720.jpg');
+    width: 100%;
+    height:237px;
+    z-index:-1;
+    opacity: 0.8;
+}
+
+/* Contact section */
+#contact{
+    position: relative;
+    background: url('https://cdn.pixabay.com/photo/2015/02/02/11/09/office-620822_960_720.jpg')no-repeat center center/cover;
+    
+    
+}
+#contact::before{
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+    z-index: -1;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
+}
+#contact-box form p input{
+    width:365px ;
+    padding: 8px;
+    border-radius: 10px;
+}
+/* Footer section */
+footer{
+    background-color: black;
+    color:cornsilk;
+    padding: 10px 450px;
+}

@@ -1,0 +1,53 @@
+/* Navigation Bar */
+#navbar{
+    flex-direction: column;
+}
+#navbar ul{
+    margin-left: 20px;
+}
+#navbar img{
+    justify-content: center;
+    align-items: center;
+    
+}
+#navbar::before{
+    height: 184px;
+}
+/* Home section */
+#home{
+    height: 290px;
+    margin-top: 40px;
+}
+#home::before{
+    height: 445px;
+    width: 100%;
+}
+#home p{
+    font-size: 11.6px;
+    
+}
+/* Services section */
+#services{
+    flex-direction: column;
+}
+
+/* client section */
+#clients{
+    flex-wrap: wrap;
+}
+#clients img{
+    height: 66px;
+    
+}
+#client-section::before{
+    height: 300px;
+    width: 100%;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-size: 3.5rem;
+     
+}
+
+/* footer section */
